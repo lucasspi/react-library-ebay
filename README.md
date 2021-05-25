@@ -13,18 +13,22 @@ npm install --save ebayui-dc-react
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'ebayui-dc-react'
+import { BulletPoint, MessageComponent } from 'ebayui-dc-react'
 import 'ebayui-dc-react/dist/index.css'
-
-class Example extends Component {
+export const YourComponent: React.FC<any> = (data: any) => {
   render() {
-    return <MyComponent />
+    return (
+      <div>
+        <BulletPoint {...data} />
+        <MessageComponent {...data} />
+      </div>
+    )
   }
 }
 ```
 
 ## License
 
-MIT © [lspirandeli](https://github.com/lspirandeli)
+MIT © [lspirandeli](https://github.corp.ebay.com/lspirandeli)
