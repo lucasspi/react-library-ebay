@@ -20,8 +20,8 @@ export const YourComponent: React.FC<any> = (data: any) => {
 
   return (
     <div>
-      <BulletPoint {...data} />
-      <MessageComponent {...data} />
+      <BulletPoint {...data.BULLET_POINT_SUMMARY} />
+      <MessageComponent {...data.NOTIFICATION} />
     </div>
   )
   
