@@ -1,0 +1,29 @@
+@import './variables.less';
+
+// media query breakpoint for responsive layout
+.breakpoint(@width, @rules) {
+  @media screen and (min-width: @width) {
+    @rules();
+  }
+}
+
+.layout-container(@is-global-header: false) {
+  // mobile viewport
+  margin-left: @spacing-16px;
+  margin-right: @spacing-16px;
+  max-width: @layout-max-width - (@spacing-16px * 2);
+
+  // between mobile to desktop viewport
+  .breakpoint(@breakpoint-600px, {
+    margin-left: @spacing-32px;
+    margin-right: @spacing-32px;
+    max-width: @layout-max-width - (@spacing-32px * 2);
+  });
+
+  // for larger desktop viewport
+  .breakpoint(@layout-max-width, {
+    // NOTE: need to add important for Global Header (see JUSTDE-2591)
+    margin-left: if((@is-global-header = true), ~"auto !important", ~"auto");
+    margin-right: if((@is-global-header = true), ~"auto !important", ~"auto");
+  });
+}

@@ -1,10 +1,11 @@
 import React from 'react'
 
-import { ExampleComponent } from 'ebayui-dc-react'
+import { BulletPoint } from 'ebayui-dc-react'
 import 'ebayui-dc-react/dist/index.css'
+import mocks from './mocks.json'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <BulletPoint {...mocks.modules.BULLET_POINT_SUMMARY} />
 }
 
 export default App

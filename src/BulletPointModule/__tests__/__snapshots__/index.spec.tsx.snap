@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Module {...defaultProps} /> should render steps with default icons given a model without Experience Icon 1`] = `
+<DocumentFragment>
+  <div
+    class="bullet-steps"
+  >
+    <h2>
+      <span
+        class="eui-textual-display"
+      >
+        <span
+          class="eui-text-span "
+        >
+          <span
+            class="BOLD"
+          >
+            Here’s what you can get
+          </span>
+        </span>
+      </span>
+    </h2>
+    <div
+      class="step-list"
+    >
+      <div
+        class="step"
+      >
+        <div>
+          <div
+            class="bullet-point"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="text-step"
+        >
+          <h3>
+            <span
+              class="eui-textual-display"
+            >
+              <span
+                class="eui-text-span "
+              >
+                <span
+                  class="BOLD"
+                >
+                  All-in-one management
+                </span>
+              </span>
+            </span>
+          </h3>
+          <span
+            class="eui-textual-display"
+          >
+            <span
+              class="eui-text-span "
+            >
+              <span
+                class="SECONDARY"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend arcu tincidunt gravida auctor. Vivamus nec velit sed mi ultrices bibendum.
+              </span>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="step"
+      >
+        <div>
+          <div
+            class="bullet-point"
+          >
+            2
+          </div>
+        </div>
+        <div
+          class="text-step"
+        >
+          <h3>
+            <span
+              class="eui-textual-display"
+            >
+              <span
+                class="eui-text-span "
+              >
+                <span
+                  class="BOLD"
+                >
+                  Price guidance and sales history
+                </span>
+              </span>
+            </span>
+          </h3>
+          <span
+            class="eui-textual-display"
+          >
+            <span
+              class="eui-text-span "
+            >
+              <span
+                class="SECONDARY"
+              >
+                Sed vel lacus ut ante lacinia vehicula. Cras hendrerit posuere sapien eget pulvinar. Nam dictum velit sed augue elementum venenatis.
+              </span>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        class="step"
+      >
+        <div>
+          <div
+            class="bullet-point"
+          >
+            3
+          </div>
+        </div>
+        <div
+          class="text-step"
+        >
+          <h3>
+            <span
+              class="eui-textual-display"
+            >
+              <span
+                class="eui-text-span "
+              >
+                <span
+                  class="BOLD"
+                >
+                  Instant listing
+                </span>
+              </span>
+            </span>
+          </h3>
+          <span
+            class="eui-textual-display"
+          >
+            <span
+              class="eui-text-span "
+            >
+              <span
+                class="SECONDARY"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend arcu tincidunt gravida auctor. Vivamus nec velit sed mi ultrices bibendum.
+              </span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

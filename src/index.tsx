@@ -1,10 +1,6 @@
 import * as React from 'react'
-import styles from './styles.module.less'
+import { BulletPointModule } from './BulletPointModule'
 
-interface Props {
-  text: string
-}
-
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export const BulletPoint = (data: any) => {
+  return <BulletPointModule data={data} />
 }

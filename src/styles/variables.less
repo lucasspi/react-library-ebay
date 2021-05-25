@@ -1,0 +1,50 @@
+// LESS variables & mixins
+
+// eBay Skin variables and mixins so we could use it inside our LESS file
+@import '@ebay/skin/dist/variables/ds6/color-variables.less';
+@import '@ebay/skin/dist/variables/ds6/icon-variables.less';
+@import '@ebay/skin/dist/variables/ds6/typography-variables.less';
+@import '@ebay/skin/dist/mixins/utility/utility-mixins.less';
+@import '@ebay/skin/dist/mixins/icon/ds6/icon-mixins.less';
+@import '@ebay/skin/dist/mixins/typography/ds6/typography-mixins.less';
+
+// breakpoints loosely based on Playbook Screen widths,
+// see https://playbook.corp.ebay.com/PlaybookApp#/executional-guidelines/product-design-system/principles/grids
+@breakpoint-360px: 360px;
+@breakpoint-480px: 480px;
+@breakpoint-600px: 600px;
+@breakpoint-768px: 768px;
+@breakpoint-960px: 960px;
+@breakpoint-1280px: 1280px;
+
+// spacing, see https://playbook.corp.ebay.com/PlaybookApp#/executional-guidelines/product-design-system/principles/spacing
+@spacing-8px: 8px;
+@spacing-16px: 16px; // dominant
+@spacing-24px: 24px;
+@spacing-32px: 32px;
+@spacing-64px: 64px;
+
+@spacing-l: 1rem;
+@spacing-xl: 2rem;
+@spacing-xxl: 4rem;
+@spacing-xxxl: 8rem;
+// The base container with 100% width and max-width. Adjust margin accordingly based on viewport width.
+@layout-max-width: 1312px; // 1280px + 16px padding
+
+@screen-xs-min: 320px;
+
+@screen-sm-min: 600px;
+@screen-sm-max: (@screen-md-min - 1px);
+
+@screen-md-min: 768px;
+@screen-md-max: (@screen-lg-min - 1px);
+
+@screen-lg-min: 960px;
+@screen-lg-max: (@screen-xl-min - 1px);
+
+@screen-xl-min: 1280px;
+
+@media-mobile-600px: ~'only screen and (max-width: @{screen-sm-min})';
+@media-mobile: ~'only screen and (max-width: @{screen-sm-max})';
+@media-tablet: ~'only screen and (max-width: @{screen-md-max})';
+@media-mobile-320px: ~'only screen and (max-width: @{screen-xs-min})';

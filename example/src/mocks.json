@@ -1,0 +1,481 @@
+{
+  "modules": {
+    "DIALOG": {
+      "_type": "DialogModule",
+      "name": "ADD_TO_COLLECTION_DIALOG",
+      "title": {
+        "textSpans": [
+          {
+            "text": "Add to collection"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "_type": "TitledModule",
+          "title": {
+            "textSpans": [
+              {
+                "text": "Bulk Upload"
+              }
+            ]
+          },
+          "subTitle": {
+            "textSpans": [
+              {
+                "text": "Add you entire collection with a CSV file"
+              }
+            ]
+          },
+          "overflow": {
+            "_type": "CallToAction",
+            "text": "Get started",
+            "type": "PRIMARY",
+            "action": {
+              "_type": "Action",
+              "type": "NAV",
+              "URL": "www.ebay.com"
+            }
+          }
+        },
+        {
+          "_type": "TitledModule",
+          "title": {
+            "textSpans": [
+              {
+                "text": "Add from past purchases (currently app only)"
+              }
+            ]
+          },
+          "subTitle": {
+            "textSpans": [
+              {
+                "text": "Add your purchased cards in one click"
+              }
+            ]
+          },
+          "overflow": {
+            "_type": "CallToAction",
+            "text": "Coming Soon",
+            "type": "PRIMARY",
+            "disabled": true,
+            "action": {
+              "_type": "Action",
+              "type": "OPERATION",
+              "name": "ADD_COLLECTION"
+            }
+          }
+        },
+        {
+          "_type": "TitledModule",
+          "title": {
+            "textSpans": [
+              {
+                "text": "Add manually (currently app only)"
+              }
+            ]
+          },
+          "subTitle": {
+            "textSpans": [
+              {
+                "text": "Upload detail for the cards you have or want"
+              }
+            ]
+          },
+          "overflow": {
+            "_type": "CallToAction",
+            "text": "Coming Soon",
+            "type": "PRIMARY",
+            "disabled": true,
+            "action": {
+              "_type": "Action",
+              "type": "OPERATION",
+              "name": "ADD_COLLECTION"
+            }
+          }
+        },
+        {
+          "_type": "MessageModule",
+          "messageType": "INFO",
+          "displayIcon": false,
+          "title": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+              {
+                "_type": "TextSpan",
+                "text": "Full functionality of Digital Collections is available only in eBay app now",
+                "styles": ["BOLD"]
+              }
+            ]
+          },
+          "additionalText": [
+            {
+              "_type": "TextualDisplay",
+              "textSpans": [
+                {
+                  "_type": "TextSpan",
+                  "text": "To download it, open your phone’s camera and scan this code."
+                }
+              ]
+            },
+            {
+              "_type": "TextualDisplay",
+              "textSpans": [
+                {
+                  "_type": "TextSpan",
+                  "text": "Don't show me again",
+                  "styles": ["PSEUDOLINK"]
+                }
+              ],
+              "action": {
+                "type": "OPERATION",
+                "name": "HIDE_COLLECTION_NOTIFICATION_1"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "TITLED": {
+      "_type": "TitledModule",
+      "title": {
+        "textSpans": [
+          {
+            "text": "Digital Collection"
+          }
+        ]
+      }
+    },
+    "NOTIFICATION": {
+      "_type": "MessageModule",
+      "messageType": "INFO",
+      "displayIcon": false,
+      "title": {
+        "_type": "TextualDisplay",
+        "textSpans": [
+          {
+            "_type": "TextSpan",
+            "text": "Full functionality of Digital Collections is available only in eBay app now",
+            "styles": ["BOLD"]
+          }
+        ]
+      },
+      "additionalText": [
+        {
+          "_type": "TextualDisplay",
+          "textSpans": [
+            {
+              "_type": "TextSpan",
+              "text": "To download it, open your phone’s camera and scan this code."
+            }
+          ]
+        },
+        {
+          "_type": "TextualDisplay",
+          "textSpans": [
+            {
+              "_type": "TextSpan",
+              "text": "Don't show me again",
+              "styles": ["PSEUDOLINK"]
+            }
+          ],
+          "action": {
+            "type": "OPERATION",
+            "name": "HIDE_COLLECTION_NOTIFICATION_1"
+          }
+        }
+      ],
+      "footer": {
+        "_type": "Image",
+        "title": "QR code to ebay app",
+        "URL": "https://cr.qa.ebaystatic.com/cr/v/test/collections/mocks/qrcode.png"
+      }
+    },
+    "TIME_FILTERS": {
+      "_type": "TimeFiltersModule",
+      "timeFilters": {
+        "_type": "Group",
+        "entries": [
+          {
+            "_type": "Field",
+            "disabled": false,
+            "lockable": false,
+            "selected": false,
+            "paramKey": "filter",
+            "paramValue": "1M",
+            "label": {
+              "_type": "TextualDisplay",
+              "textSpans": [{ "_type": "TextSpan", "text": "1M" }]
+            },
+            "action": {
+              "_type": "Action",
+              "type": "OPERATION",
+              "name": "filter",
+              "params": { "filter": "1M" },
+              "signInRequired": false
+            },
+            "defaultChoice": true,
+            "accessibilityText": "choose 1 months period"
+          },
+          {
+            "_type": "Field",
+            "disabled": false,
+            "lockable": false,
+            "selected": false,
+            "paramKey": "filter",
+            "paramValue": "3M",
+            "label": {
+              "_type": "TextualDisplay",
+              "textSpans": [
+                { "_type": "TextSpan", "text": "choose 3 months period" }
+              ]
+            },
+            "action": {
+              "_type": "Action",
+              "type": "OPERATION",
+              "name": "filter",
+              "params": { "filter": "3M" },
+              "signInRequired": false
+            },
+            "defaultChoice": false,
+            "accessibilityText": "choose 3 months period"
+          },
+          {
+            "_type": "Field",
+            "disabled": false,
+            "lockable": false,
+            "selected": false,
+            "paramKey": "filter",
+            "paramValue": "1Y",
+            "label": {
+              "_type": "TextualDisplay",
+              "textSpans": [
+                { "_type": "TextSpan", "text": "choose 1 year period" }
+              ]
+            },
+            "action": {
+              "_type": "Action",
+              "type": "OPERATION",
+              "name": "filter",
+              "params": { "filter": "1Y" },
+              "signInRequired": false
+            },
+            "defaultChoice": false,
+            "accessibilityText": "choose 1 year period"
+          }
+        ],
+        "disabled": false,
+        "lockable": false,
+        "selected": false,
+        "defaultChoice": false
+      }
+    },
+    "MARKETING_BANNER": {
+      "_type": "MarketingBannerModule",
+      "placementid": "1",
+      "creatives": [
+        {
+          "headline": {
+            "textSpans": [
+              {
+                "text": "Welcome to your digital collection"
+              }
+            ],
+            "accessibilityText": "Add to Collection",
+            "action": {
+              "accessibilityText": "Add to Collection",
+              "type": "NAV",
+              "trackingList": [],
+              "name": "TOGGLE_DIALOG",
+              "params": {
+                "name": "ADD_TO_COLLECTION_DIALOG"
+              }
+            }
+          },
+          "subHeadline": {
+            "textSpans": [
+              {
+                "text": "Unlock full potential of your collection with eBay"
+              }
+            ]
+          },
+          "callToAction": {
+            "textSpans": [
+              {
+                "text": "Add to Collection"
+              }
+            ],
+            "accessibilityText": "Add to Collection",
+            "action": {
+              "type": "OPERATION",
+              "trackingList": [],
+              "accessibilityText": "Add to Collection",
+              "name": "TOGGLE_DIALOG",
+              "params": {
+                "name": "ADD_TO_COLLECTION_DIALOG"
+              }
+            }
+          },
+          "textColors": {
+            "headline": "Black",
+            "callToAction": "B4",
+            "subHeadline": "Black",
+            "finePrintContent": "Black"
+          },
+          "backgroundColor": "Y4",
+          "viewedImpressionTracking": {
+            "eventFamily": "HOMEPAGE",
+            "eventAction": "VIEW",
+            "operationId": "2481888",
+            "flushImmediately": false,
+            "eventProperty": {
+              "ammiid": "1417296228386445262",
+              "amdata": "uid=44671260835|ul=en-US|bw=LARGE|tdt=iid:1417296228386445262,clkid:1417296228386445261|plmt=(cid:18915 gbh: iid:1417296228386445262 mid:27064 pid:100002 sid:-1 tid:fcc7b909-3fab-455f-81ae-341845ac452b ttype:HOME_PAGE_BANNER_MSE vid:j9t2dj52djhva3czakvrplw28f28mqnb6jycx19wun4gzj0oamz4f2kd4oprfdnn)|uc=1|m=27064|bs=0|12=0",
+              "ampid": "MADRONA"
+            }
+          }
+        },
+        {
+          "image": {
+            "imageId": "4343243",
+            "imageIdType": "ZOOM_GUID",
+            "originalSize": {
+              "height": 850,
+              "width": 850
+            },
+            "URL": "https://i.ebayimg.com/images/g/1eEAAOSwAV1gge6~/s-l960.webp",
+            "action": {
+              "type": "NAV",
+              "trackingList": [
+                {
+                  "actionKind": "NAV",
+                  "eventProperty": {
+                    "sid": "p2481888.m4519.l8658.c1",
+                    "trkp": "pageci%3Aaef334b0-4e29-11e8-8ec9-74dbd18059c8%7Cparentrq%3A21c82d721630a9c510ee0692fffe711a%7Ciid%3A1"
+                  },
+                  "operationId": "2481888",
+                  "flushImmediately": false
+                },
+                {
+                  "actionKind": "NAVSRC",
+                  "eventAction": "ACTN",
+                  "eventFamily": "HOMEPAGE",
+                  "operationId": "2481888",
+                  "flushImmediately": false,
+                  "eventProperty": {
+                    "amdata": "uid=44671260835|ul=en-US|bw=LARGE|tdt=iid:1417296228386445262,clkid:1417296228386445261|plmt=(cid:18915 gbh: iid:1417296228386445262 mid:27064 pid:100002 sid:-1 tid:fcc7b909-3fab-455f-81ae-341845ac452b ttype:HOME_PAGE_BANNER_MSE vid:j9t2dj52djhva3czakvrplw28f28mqnb6jycx19wun4gzj0oamz4f2kd4oprfdnn)|uc=1|m=27064|bs=0|12=0",
+                    "ammiid": "1417296228386445262",
+                    "moduledtl": "mi:4519|iid:1|li:8658|luid:1|c:1",
+                    "pageci": "aef334b0-4e29-11e8-8ec9-74dbd18059c8",
+                    "parentrq": "21c82d721630a9c510ee0692fffe711a",
+                    "ampid": "MADRONA"
+                  }
+                }
+              ],
+              "accessibilityText": "Custom Gifts from eBay",
+              "name": "DEALS",
+              "URL": "https://www.ebay.de/b/Saisonale-Angebote/bn_7109743159",
+              "params": {
+                "dealId": "34234",
+                "dealMode": "dlkfjs"
+              }
+            }
+          },
+          "viewedImpressionTracking": {
+            "eventFamily": "HOMEPAGE",
+            "eventAction": "VIEW",
+            "operationId": "2481888",
+            "flushImmediately": false,
+            "eventProperty": {
+              "ammiid": "1417296228386445262",
+              "amdata": "uid=44671260835|ul=en-US|bw=LARGE|tdt=iid:1417296228386445262,clkid:1417296228386445261|plmt=(cid:18915 gbh: iid:1417296228386445262 mid:27064 pid:100002 sid:-1 tid:fcc7b909-3fab-455f-81ae-341845ac452b ttype:HOME_PAGE_BANNER_MSE vid:j9t2dj52djhva3czakvrplw28f28mqnb6jycx19wun4gzj0oamz4f2kd4oprfdnn)|uc=1|m=27064|bs=0|12=0",
+              "pageci": "aef334b0-4e29-11e8-8ec9-74dbd18059c8",
+              "ampid": "MADRONA"
+            }
+          }
+        }
+      ]
+    },
+    "BULLET_POINT_SUMMARY": {
+      "_type": "BulletPointModule",
+      "title": {
+        "_type": "TextualDisplay",
+        "textSpans": [
+          {
+            "_type": "TextSpan",
+            "text": "Here’s what you can get",
+            "styles": ["BOLD"]
+          }
+        ]
+      },
+      "steps": [
+        {
+          "heading": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+              {
+                "_type": "TextSpan",
+                "text": "Speed and Efficiency",
+                "styles": ["BOLD"]
+              }
+            ]
+          },
+          "body": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+              {
+                "_type": "TextSpan",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend arcu tincidunt gravida auctor. Vivamus nec velit sed mi ultrices bibendum.",
+                "styles": ["SECONDARY"]
+              }
+            ]
+          }
+        },
+        {
+          "heading": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+              {
+                "_type": "TextSpan",
+                "text": "Data Quality",
+                "styles": ["BOLD"]
+              }
+            ]
+          },
+          "body": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+              {
+                "_type": "TextSpan",
+                "text": "Sed vel lacus ut ante lacinia vehicula. Cras hendrerit posuere sapien eget pulvinar. Nam dictum velit sed augue elementum venenatis.",
+                "styles": ["SECONDARY"]
+              }
+            ]
+          }
+        },
+        {
+          "heading": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+              {
+                "_type": "TextSpan",
+                "text": "Visibility and Tracking",
+                "styles": ["BOLD"]
+              }
+            ]
+          },
+          "body": {
+            "_type": "TextualDisplay",
+            "textSpans": [
+              {
+                "_type": "TextSpan",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend arcu tincidunt gravida auctor. Vivamus nec velit sed mi ultrices bibendum.",
+                "styles": ["SECONDARY"]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

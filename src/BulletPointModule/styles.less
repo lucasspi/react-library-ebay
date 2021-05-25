@@ -1,0 +1,52 @@
+@import "../styles/mixins.less";
+
+.bullet-point {
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  text-align: center;
+  border-radius: 50%;
+  box-sizing: content-box;
+  color: #3665f3;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  margin-bottom: 1.5rem;
+}
+
+.bullet-steps {
+  padding-top: @spacing-xl;
+  padding-bottom: @spacing-xxl;
+
+  @media @media-mobile {
+    padding-bottom: @spacing-l;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .step-list {
+    display: flex;
+    justify-content: space-between;
+
+    @media @media-mobile {
+      flex-direction: column;
+    }
+  }
+
+  .step {
+    padding-right: 1rem;
+    @media @media-mobile {
+      display: flex;
+      .text-step {
+        padding-left: 1rem;
+        padding-bottom: 2rem;
+      }
+    }
+    h3 {
+      font-size: 1.1rem;
+      margin: 10px 0px;
+    }
+  }
+}
