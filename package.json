@@ -1,6 +1,6 @@
 {
   "name": "ebayui-dc-react",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "React Library of Digital Collections project for Front-end support",
   "author": "Collection Team <lspirandeli@ebay.com>",
   "license": "MIT",
@@ -34,7 +34,8 @@
     "@ebay/skin": "^10.0.0",
     "digital-collections-types": "^1.0.6",
     "ebayui-core-react": "^6.1.0",
-    "ebayui-app-react": "^4.0.0"
+    "ebayui-app-react": "^4.0.0",
+    "skin-react": "^2.0.0-beta.49"
   },
   "devDependencies": {
     "@ebay/skin": "^10.0.0",
@@ -68,6 +69,7 @@
     "microbundle-crl": "^0.13.10",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
+    "skin-react": "^2.0.0-beta.49",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
